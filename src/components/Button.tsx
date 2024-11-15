@@ -2,7 +2,7 @@ import { customElement } from "solid-element";
 import { createSignal } from "solid-js";
 import globalCSS from "../index.css?inline";
 
-function ScButton(props: { someProp: string; onClick?: () => void; class?: string; disabled?: boolean; }) {
+function CnButton(props: { someProp: string; onClick?: () => void; class?: string; disabled?: boolean; }) {
     const [isDisabled] = createSignal(props.disabled || false);
     return (
         <>
@@ -23,4 +23,4 @@ function ScButton(props: { someProp: string; onClick?: () => void; class?: strin
     );
 }
 
-customElement("cn-button", { someProp: "Click me", class: "", disabled: false }, ScButton);
+customElement("cn-button", { someProp: "Click me", class: "", disabled: false }, CnButton);

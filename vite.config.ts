@@ -16,6 +16,11 @@ export default defineConfig(async () => {
     server: {
       port: 3000,
     },
+    resolve: {
+      alias: {
+        '@': '/src',
+      },
+    },
     build: {
       target: 'esnext',
       lib: {
